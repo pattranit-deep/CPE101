@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montenegrin+Gothic+One&family=Unkempt&display=swap');
+
+*{
+    font-family: "Montenegrin Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-image:url(https://m.imageimg.net/upload/artist_img/NCT12/7d38ce086603d853ac44c46cd8c6d6f053f1a9ca_65cea688a2b8d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    color: #44ffe0;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(rgba(0, 0, 0, 0), green, blue, alpha);
+}
+body *{
+    z-index: 1;
+}
+h1{
+    font-size: 40px;
+    margin: -80px 0 40px;
+}
+.countdown{
+    display: flex;
+    transform: scale(2);
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.time2 h2{
+    margin: 0 0 5px;
+}
+@media(max-width: 500px){
+    h1{
+        font-size: 35px;
+    }
+    .time{
+        margin: 5px;
+    }
+    .time h2{
+        font-size: 12px;
+        margin: 0;
+    }
+    .time small{
+        font-size: 10px;
+    }
+}
